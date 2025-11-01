@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoStranka</title>
+</head>
+<link rel="stylesheet" href="infostyle.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-offset="80" tabindex="0">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav id="navbar-scroll" class="navbar bg-dark navbar-dark fixed-top px-3">
+  <a class="navbar-brand fw-bold" href="#">Info strane</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#sekce1">Historie</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#sekce2">Nase sluzby</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#sekce3">Reference zakazniku</a>
+    </li>
+  </ul>
+</nav>
+
+
+<div id="sekce1" class="scroll-section container">
+  <h2>Historie autobazaru</h2>
+  <p>
+    Nas autobazar vznikl v roce 
+    <span data-bs-toggle="tooltip" title="chat asi nevi ze mi v te dobe bylo 12">
+      2020
+    </span> 
+    kdy jsme se rozhodli nabizet nejlevnejsi vozy s nejvetsi patinou (rez).
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien suscipit, auctor augue ultricies, sagittis dolor. Morbi dictum orci ac nibh mattis posuere. Vivamus mollis nisl vitae justo viverra, ut vehicula tellus hendrerit. Nulla pharetra metus ac fringilla euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent consequat, leo non ultricies mattis, ipsum massa placerat tortor, eget ultrices mi lacus vel metus. Etiam mauris eros, malesuada a ornare non, convallis nec sem. Vestibulum laoreet, tellus eget commodo consequat, dui mi posuere tortor, ac faucibus magna dolor eget dui. Etiam aliquam nec mauris euismod auctor. Mauris urna justo, viverra vel orci ullamcorper, lobortis sodales neque. Sed efficitur turpis nec turpis auctor venenatis. Suspendisse potenti. Integer quis nisl in odio congue porta.
+  </p>
+</div>
+
+<div id="sekce2" class="scroll-section container">
+  <h2>Nase sluzby</h2>
+  <p>
+    Nabizime prodej vozidel, 
+    <span data-bs-toggle="tooltip" title="doporucuje se zkontrolovat stav pred koupi">
+      dvoudenni zaruku do 5 km zdarma
+    </span>,  
+    kafe zdarma (pokud je) a jedinecny zazitek pri vyberu vaseho vozu.
+    </p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien suscipit, auctor augue ultricies, sagittis dolor. Morbi dictum orci ac nibh mattis posuere. Vivamus mollis nisl vitae justo viverra, ut vehicula tellus hendrerit. Nulla pharetra metus ac fringilla euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent consequat, leo non ultricies mattis, ipsum massa placerat tortor, eget ultrices mi lacus vel metus. Etiam mauris eros, malesuada a ornare non, convallis nec sem. Vestibulum laoreet, tellus eget commodo consequat, dui mi posuere tortor, ac faucibus magna dolor eget dui. Etiam aliquam nec mauris euismod auctor. Mauris urna justo, viverra vel orci ullamcorper, lobortis sodales neque. Sed efficitur turpis nec turpis auctor venenatis. Suspendisse potenti. Integer quis nisl in odio congue porta.</p>
+</div>
+
+<div id="sekce3" class="scroll-section container">
+  <h2>Reference zakazniku</h2>
+  <p>
+    Zakaznici si chvali hlavne:
+  </p>
+  <ul>
+    <li data-bs-toggle="tooltip" title="mozna az podezrele levne">Nizke ceny</li>
+    <li data-bs-toggle="tooltip" title="Usmev je zdarma">Ochotny personal</li>
+    <li data-bs-toggle="tooltip" title="Kafe neni kazdy den">Moznost kafe</li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien suscipit, auctor augue ultricies, sagittis dolor. Morbi dictum orci ac nibh mattis posuere. Vivamus mollis nisl vitae justo viverra, ut vehicula tellus hendrerit. Nulla pharetra metus ac fringilla euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent consequat, leo non ultricies mattis, ipsum massa placerat tortor, eget ultrices mi lacus vel metus. Etiam mauris eros, malesuada a ornare non, convallis nec sem. Vestibulum laoreet, tellus eget commodo consequat, dui mi posuere tortor, ac faucibus magna dolor eget dui. Etiam aliquam nec mauris euismod auctor. Mauris urna justo, viverra vel orci ullamcorper, lobortis sodales neque. Sed efficitur turpis nec turpis auctor venenatis. Suspendisse potenti. Integer quis nisl in odio congue porta.</p>
+</div>
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
+</body>
+</html>
